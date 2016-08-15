@@ -43,6 +43,7 @@ exports.config = {
         server.close();
     },
     onPrepare: () => {
+        browser.ignoreSynchronization = true;
         jasmine.getEnv().addReporter(new SpecReporter());
     }
 }
