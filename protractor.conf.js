@@ -2,6 +2,7 @@ var SpecReporter = require('jasmine-spec-reporter');
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./webpack.config');
+var deasync = require('deasync');
 
 var server;
 exports.config = {
@@ -22,11 +23,21 @@ exports.config = {
         print: () => {}
     },
     beforeLaunch: () => {
-        var compiler = webpack(webpackConfig);
+        var isServerReady = false;
+        var isBundleReady = false;
+        var compiler = webpack(webpackConfig, () => {
+            isBundleReady = true;
+            console.log('Dumpster fire bundled...');
+        });
         server = new WebpackDevServer(compiler, {
             publicPath: '/dist/'
         });
-        server.listen(8080, () => {});
+        server.listen(8080, () => {
+            isServerReady = true;
+            console.log('Dumpster fire started...');
+        });
+
+        deasync.loopWhile(() => !isServerReady || !isBundleReady);
     },
     afterLaunch: () => {
         server.close();

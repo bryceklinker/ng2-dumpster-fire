@@ -21,6 +21,7 @@
   "homepage": "https://github.com/bryceklinker/ng2-dumpster-fire#readme",
   "devDependencies": {
     "angular2-template-loader": "0.4.0",
+    "deasync": "^0.1.7",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
