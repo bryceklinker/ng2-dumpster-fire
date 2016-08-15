@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "jsout",
+        "target": "es5"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

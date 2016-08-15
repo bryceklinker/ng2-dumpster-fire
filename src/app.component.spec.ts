@@ -14,5 +14,5 @@ describe('AppComponent', () => {
             .then(fixture => {
                 expect(fixture.nativeElement.querySelector('h3').innerText).toContain('Hello');
             });
-    }));
+    })));
 });
