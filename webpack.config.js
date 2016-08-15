@@ -1,6 +1,14 @@
+var path = require('path');
+
 module.exports = {
+    entry: {
+        vendor: './src/vendor.ts',
+        app: './src/main.ts'
+    },
     output: {
-        filename: 'bundle.js'
+        path: path.join(__dirname, 'dist'),
+        filename: 'js/[name].js',
+        sourceMapFilename: '[file].map'
     },
     resolve: {
         extensions: ['', '.ts', '.js', '.html']

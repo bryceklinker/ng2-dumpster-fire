@@ -1,3 +1,4 @@
 .vscode/.browse*
 node_modules
 typings
+dist
