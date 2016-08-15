@@ -1,3 +1,7 @@
+import 'es6-shim';
+import 'reflect-metadata';
+import 'zone.js/dist/zone';
+
 import { setBaseTestProviders } from '@angular/core/testing';
 import { 
     TEST_BROWSER_DYNAMIC_APPLICATION_PROVIDERS, 
