@@ -1,0 +1,19 @@
+{
+  "name": "ng2-dumpster-fire",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryceklinker/ng2-dumpster-fire.git"
+  },
+  "author": "Bryce Klinker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryceklinker/ng2-dumpster-fire/issues"
+  },
+  "homepage": "https://github.com/bryceklinker/ng2-dumpster-fire#readme"
+}
