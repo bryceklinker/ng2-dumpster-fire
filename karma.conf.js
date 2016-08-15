@@ -10,7 +10,7 @@ module.exports = function(config) {
     preprocessors: {
       'src/specs.ts': ['webpack']
     },
-    reporters: ['progress'],
+    reporters: ['spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

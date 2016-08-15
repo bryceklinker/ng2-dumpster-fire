@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "karma start"
+    "test": "karma start",
+    "pree2e": "webdriver-manager update",
+    "e2e": "protractor"
   },
   "repository": {
     "type": "git",
@@ -20,12 +22,14 @@
   "devDependencies": {
     "angular2-template-loader": "0.4.0",
     "jasmine-core": "2.4.1",
+    "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",
     "karma-jasmine": "1.0.2",
     "karma-phantomjs-launcher": "1.0.1",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "1.8.0",
     "phantomjs-prebuilt": "2.1.12",
+    "protractor": "4.0.3",
     "raw-loader": "0.5.1",
     "ts-loader": "0.8.2",
     "typescript": "1.8.10",
