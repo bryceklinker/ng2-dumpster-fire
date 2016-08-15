@@ -10,7 +10,7 @@ exports.config = {
     useAllAngular2AppRoots: true,
     directConnect: true,
     framework: 'jasmine',
-    baseUrl: 'http://localhost:8080/',
+    baseUrl: 'http://localhost:8080',
     specs: [
         'e2e/**/*.e2e.ts'
     ],
@@ -29,9 +29,7 @@ exports.config = {
             isBundleReady = true;
             console.log('Dumpster fire bundled...');
         });
-        server = new WebpackDevServer(compiler, {
-            publicPath: '/dist/'
-        });
+        server = new WebpackDevServer(compiler, {});
         server.listen(8080, () => {
             isServerReady = true;
             console.log('Dumpster fire started...');
