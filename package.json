@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bryceklinker/ng2-dumpster-fire/issues"
   },
-  "homepage": "https://github.com/bryceklinker/ng2-dumpster-fire#readme"
+  "homepage": "https://github.com/bryceklinker/ng2-dumpster-fire#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
 }
