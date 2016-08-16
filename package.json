@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack",
+    "start": "webpack-dev-server --progress --colors --hot --inline",
+    "build": "webpack --progress --colors",
+    "build:prod": "webpack --config ./webpack.prod.js --progress --colors",
     "test": "karma start",
+    "test:single": "karma start --single-run",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
