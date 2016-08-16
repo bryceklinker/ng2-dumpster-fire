@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = function make(env) {
     return {
-        devtool: isProd(env) ? 'cheap-module-source-map' : 'eval',
+        devtool: isProd(env) ? 'cheap-module-source-map' : 'source-map',
         entry: {
             vendor: './src/vendor.ts',
             app: './src/main.ts'
@@ -36,6 +36,13 @@ function getPlugins(env) {
             template: './src/index.html',
             filename: 'index.html',
             inject: 'body'
+        }),
+        new webpack.DefinePlugin({
+            process: {
+                env: {
+                    ENV: JSON.stringify(env)
+                }
+            }
         })
     ];
 
