@@ -1,7 +1,7 @@
 var SpecReporter = require('jasmine-spec-reporter');
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var webpackConfig = require('./webpack.config');
+var webpackConfig = require('./webpack.prod');
 var deasync = require('deasync');
 
 var server;
