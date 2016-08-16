@@ -1,6 +1,3 @@
-import 'es6-shim';
-import 'reflect-metadata';
-import 'zone.js/dist/zone';
 import 'zone.js/dist/async-test';
 
 import { setBaseTestProviders } from '@angular/core/testing';
